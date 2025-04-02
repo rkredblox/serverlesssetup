@@ -9,20 +9,21 @@
 # move to dir
   cd ai-fashion-lambda
 # edit serverless.yml
-  service: ai-fashion-lambda
-  provider:
-    name: aws
-    runtime: python3.9
-  
-  functions:
-    hello:
-      handler: handlers/hello.hello
-      events:
-        - http:
-            path: hello
-            method: get
-  plugins:
-    - serverless-offline
+  # code in yml file 
+    service: ai-fashion-lambda
+    provider:
+      name: aws
+      runtime: python3.9
+    
+    functions:
+      hello:
+        handler: handlers/hello.hello
+        events:
+          - http:
+              path: hello
+              method: get
+    plugins:
+      - serverless-offline
 # create folder handler . for create all api in that module
   # For Example
     /handler
