@@ -9,7 +9,7 @@
 # move to dir
   cd ai-fashion-lambda
 # edit serverless.yml
-  # code in yml file 
+  ## code in yml file 
     service: ai-fashion-lambda
     provider:
       name: aws
